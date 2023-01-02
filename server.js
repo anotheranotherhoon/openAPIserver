@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors')
 const restaurantData = require('./restaurantData')
 const festivalData = require('./festivalData')
-
+const PORT = 8000
 app.use(cors())
 
 app.get('/restaurant', async(req, res)=> {
@@ -25,6 +25,6 @@ app.get('/festival', async(req, res)=> {
     })
 })
 
-app.listen(8000,() => {
-    console.log("The server is running at the port 8000")
+app.listen(PORT,() => {
+    console.log(`The server is running at the port ${PORT}`)
 })
