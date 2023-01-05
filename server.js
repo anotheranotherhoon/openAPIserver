@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors')
 const restaurantData = require('./restaurantData')
 const festivalData = require('./festivalData')
-const PORT = 8000
+const PORT = 80
 app.use(cors())
 
 app.get('/restaurant', async(req, res)=> {
